@@ -1,0 +1,168 @@
+body{
+    background-color:#FBEAEA ;
+}
+
+.all h1{
+    font-family: algerian, cursive, sans-serif;
+    color: rgb(56, 94, 81);
+    z-index: 3;
+    font-size: 100px;
+    padding: 200px;
+    text-align: center;
+}
+
+.about{
+   position: absolute;
+   left: 5;
+   top: 90;
+   z-index: -1;
+   margin-top: 160px;
+    padding: 10px;
+}
+
+
+.newimg{
+    width: 133px;
+    float:left;
+    margin-right: 10px;
+}
+
+
+.thewhole{
+   position: absolute;
+   left: 0;
+   top: 90;
+   z-index: -1;
+   padding: 30px;
+   margin-top: 140px;
+    word-wrap: break-word;
+}
+
+.time{
+   
+    opacity: 0.7;
+    color:white;
+}
+.vid{
+    padding: 30px;
+}
+.kings-axum ul li:hover{
+margin-left: 5px;
+}
+*{
+    text-decoration: none;
+}
+
+.logo2{
+    height: 100%;
+    display: table;
+    float: left;
+}
+.time{
+    font-size: 30px;
+    opacity: 0.5;
+}
+    
+.kinglalibela{
+    width: 400px;
+    margin-top: 30px;
+}
+.discription{
+    text-align: center;
+    opacity: 0.5;
+}
+a.sources:hover{
+    color: rgb(44, 55, 199);
+    font-size: 12px;
+  background-color:rgb(104, 134, 134);
+}
+.sultanates li:hover{
+margin-left:5px ;
+}
+.img1{
+height: 100px;
+border: 3px inset grey;
+
+}
+.kings{
+    font-size: 25px;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color:rgb(46, 46, 100);
+}
+h1.pre-axum, h1.axum, h1.zagwe{
+    border-top: 3px solid rgb(44, 55, 199);
+    border-bottom: 3px solid rgb(44, 55, 199);
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+
+}
+.downfall, .achievements{
+    text-align: left;
+}
+.achievements{
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+p, #p1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 15px;
+}
+.side-image{
+    float:left;
+    margin-right:18px;
+    border:3px solid rgb(20, 90, 55);
+}
+#more-on{
+border-bottom: 2px solid grey;
+border-top: 2px solid grey;
+padding:4px;
+background-color: black;
+color:aliceblue;
+}
+.lists{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.sources{
+    font-size: 10px;
+    opacity: 0.8;
+    white-space: nowrap;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    cursor: pointer;
+}
+.commondiv{
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    padding:15px;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 70px; /* Place the button at the bottom of the page */
+  right: 20px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+.scope a{
+    color: white;
+    font-weight: bold;
+}
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+.colorlink li a{
+    color: #000;
+}

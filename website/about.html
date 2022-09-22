@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">  
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>ETHIOPIAN HISTORY</title>
+
+<link rel="stylesheet" href="app.js">
+<link rel="stylesheet" href="homestyle.css">
+<link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/73895252e1.js" crossorigin="anonymous"></script>
+
+</head>
+<body> 
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-69ab4344-e86b-43b1-ba65-8ccfe8b30e23" style="padding-right: 10px;"></div>
+      <div>  <nav class="navbar">
+            <div class="logo_header">
+             <p> <a href="#" class="logo"><img src="img/hisofet.jfif" alt="logo" width="90px"></a> </p> 
+              <div class="eth">
+             <span style="font-weight: bold;font-family:cursive, sans-serif;">  Ethiopian History</span></div>
+              <button class="navbar_toggle">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+        
+            
+            <ul class="main_nav">
+              <li class="scope">
+                <a href="index.html" class="nav_links">Home</a>
+              </li>
+          
+              <li onclick="myFunction()" class="scope">
+                <a class="scope" href="#" class="nav_links navdrop">Ethiopian History: 970BC-1270AD</a>
+                <ul id="dropdowns" class="dropdown-content colorlink">
+                  <li><a href="preaxum.html">Pre Axumite Empires</a></li>
+                 <li><a href="axum.html"> Axumite Empire</li></a>
+                  <li><a href="zagwe.html">Zagwe Empire</a></li>
+              </ul>
+              </li>
+              <li class="scope">
+             
+                <a href="side.html" class="nav_links">Ethiopian History: 1270AD-1855AD</a>
+              </li>
+              <li class="scope">
+                <a href="eth.html" class="nav_links">Ethiopian History: 1855AD-1913AD</a>
+              </li>
+              <li class="scope">
+                <a href="about.html" class="nav_links">About</a>
+              </li>
+            </ul>
+              
+          </nav>
+    
+       </div>
+
+       <div class="thewhole">
+        <div>
+         <p style="padding-bottom: 360px;"> <strong>This site gives a simple and essential overview of the historical background of Ethiopia through text, images, videos, links and many more. The contents are constantly updated.You can give me any comments plus suggest any new content. And dont forget to share.</strong> </p> 
+         
+        </div>
+<footer class="footer">
+        <div class="footer-content">
+           <h3 class="footer-heading">Ethiopian History</h3>
+          <div class="col">
+          <div class="row">
+            
+         
+      <div  class="footer-current">
+      <h4 style="color: aqua;">Current Contents</h4>
+      <ul class="footer-list scope">
+        <li><a href="preaxum.html">Pre Axumite Empires</a></li>
+        <li><a href="axum.html">Axumite Empire</a></li>
+        <li><a href="zagwe.html">Zagwe Empire</a></li>
+        <li><a href="side.html">Ethiopian History: 1270AD-1855AD</a></li>
+      </ul>
+      </div>
+      </div>
+      <div class="fot">
+        <h4 class="footer-contact">Contact</h4>
+      <div class="sos-links">
+      
+      <ul>
+        <div class="allli">
+        <div class="rowli">
+        <li><a href="https://telegram.me/roD_d"><i class="fa-brands fa-telegram"></i></a></li>
+        <li><a href="https://instagram.com/onfleek_rod101"><i class="fa-brands fa-instagram"></i></a></li>
+        </div>
+        <div class="rowli">
+        <li><a href="https://wa.me/0983353247?text=Hello!"><i class="fa-brands fa-whatsapp"></i></a></li>
+        <li><a href="tel:+251983353247"><i class="fa-solid fa-phone"></i></a></li>
+      </div>
+      <li class="mail"><a href="mailto:rodasyonas73@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+      </div>
+      </ul>
+      </div>
+      </div>
+    
+        </div>
+          <div class="address">
+            <p>Developed By Rodas Yonas</p>
+      </div>
+      </div>
+      </footer>
+       </div>
+       
+   
+      
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
+      
+      </body>
+      <script>const navToggle = document.querySelector(".navbar_toggle");
+          const links = document.querySelector(".main_nav");
+          
+          navToggle.addEventListener('click', function(){
+              links.classList.toggle("show_nav");
+          })
+      
+           function myFunction() {
+          document.getElementById("dropdowns").classList.toggle("show");
+        }
+        
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.scope')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+                //Get the button:
+      mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+        </script>
+      </html>
