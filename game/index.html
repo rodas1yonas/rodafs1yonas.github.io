@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Math Game</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="timer">
+      <div class="wrapper">
+        <h1>Stopwatch</h1>
+        <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+        <div class="button">
+        <button id="button-start">Start</button>
+        <button id="button-stop">Stop</button>
+        <button id="button-reset">Reset</button>
+      </div>
+        </div> 
+        
+    </div>
+    <script>window.onload = function () {
+  
+      var seconds = 00; 
+      var tens = 00; 
+      var appendTens = document.getElementById("tens")
+      var appendSeconds = document.getElementById("seconds")
+      var buttonStart = document.getElementById('button-start');
+      var buttonStop = document.getElementById('button-stop');
+      var buttonReset = document.getElementById('button-reset');
+      var Interval ;
+    
+      buttonStart.onclick = function() {
+        
+        clearInterval(Interval);
+         Interval = setInterval(startTimer, 10);
+      }
+      
+        buttonStop.onclick = function() {
+           clearInterval(Interval);
+      }
+      
+    
+      buttonReset.onclick = function() {
+         clearInterval(Interval);
+        tens = "00";
+        seconds = "00";
+        appendTens.innerHTML = tens;
+        appendSeconds.innerHTML = seconds;
+      }
+      
+       
+      
+      function startTimer () {
+        tens++; 
+        
+        if(tens <= 9){
+          appendTens.innerHTML = "0" + tens;
+        }
+        
+        if (tens > 9){
+          appendTens.innerHTML = tens;
+          
+        } 
+        
+        if (tens > 99) {
+          console.log("seconds");
+          seconds++;
+          appendSeconds.innerHTML = "0" + seconds;
+          tens = 0;
+          appendTens.innerHTML = "0" + 0;
+        }
+        
+        if (seconds > 9){
+          appendSeconds.innerHTML = seconds;
+        }
+      
+      }
+      
+    
+    }</script>
+    <div class="container">
+      <h3>Fill In The Blank With Correct Number Or Operator</h3>
+      <div id="question"></div>
+      <button id="submit-btn">Submit</button>
+      <p id="error-msg">There is something wrong</p>
+    </div>
+    <div class="controls-container">
+      <p id="result"></p>
+      <button id="start-btn">Start Game</button>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-19af"><div class="u-clearfix u-sheet u-sheet-1">
+      <p class="u-small-text u-text u-text-variant u-text-1">Developed By RODAS YONAS<br>
+      </p>
+    </div></footer>
+  </body>
+</html>
